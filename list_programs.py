@@ -56,9 +56,44 @@ for ele in words[::-1]:
     l2.append(ele[::-1])
 print(l2,end = " ")'''
 ########################################################################
+#9.	Write a list comprehension to get a list of even numbers from 1-50
+'''l = []
+for i in range(1,51):
+    if i % 2 == 0:
+        l.append(i)
+print(l)'''
+
+#list comprehension
+'''l =[i for i in range(1,51) if i % 2 == 0]
+print(l)'''
+#############################################################################
+#10.Write a program to find the duplicate elements in the list without using inbuilt functions
+'''names = ['apple', 'google', 'apple', 'yahoo', 'google']
+new_list = []
+for elements in names:
+    if elements not in new_list:
+        new_list.append(elements)
+    else:
+        print("duplicate elements are :", elements)'''
+##########################################################################################
+#11.Write a program to count the number occurrences of each item in the list without using any inbuilt functions
+names = ['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo','apple']
+'''new_dict = {}
+for element in names:
+    if element not in new_dict:
+        new_dict[element] = 1
+    else:
+        new_dict[element] += 1
+print(new_dict)'''
+#comprehension
+
+
+##########################################################################################33
+#12.	Write a program to find the largest number in the list without using any inbuilt functions
+numbers = [10, 20, 30, 40, 50]
 
 
 
 
 
-# print(ele[::-1])
+
